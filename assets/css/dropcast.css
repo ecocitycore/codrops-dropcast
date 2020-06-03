@@ -207,7 +207,7 @@ nav {
   .episode:nth-child(2) .episode__image {
     background-image: url(../images/photos/edited/2.png); }
   .episode:nth-child(3) .episode__image {
-    background-image: url(../images/photos/edited/3.png); }
+    background-image: url(../images/photos/original/futurefossils.jpg); }
   .episode:nth-child(4) .episode__image {
     background-image: url(../images/photos/original/anders.jpg); }
   .episode:nth-child(5) .episode__image {
@@ -221,7 +221,7 @@ nav {
   .episode:hover:nth-child(2) .episode__image {
     background-image: url(../images/photos/original/2.png); }
   .episode:hover:nth-child(3) .episode__image {
-    background-image: url(../images/photos/original/3.png); }
+    background-image: url(../images/photos/original/futurefossils.png); }
   .episode:hover:nth-child(4) .episode__image {
     background-image: url(../images/photos/original/anders.jpg); }
   .episode:hover:nth-child(5) .episode__image {
