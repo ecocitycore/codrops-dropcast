@@ -13,6 +13,7 @@ First make sure you have [Sass](https://sass-lang.com/) installed, then `cd` to 
 `sass --watch assetscss/main.scss:assets/css/dropcast.css`
 
 ## Credits
+*   [Amie Chen, designer of Dropcast theme](https://github.com/amiechen)
 *   [Particles.js](https://github.com/VincentGarreau/particles.js/)
 *   [Google Fonts - Rufina](https://fonts.google.com/specimen/Rufina)
 *   [Google Fonts - Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro)
