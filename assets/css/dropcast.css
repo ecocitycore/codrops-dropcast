@@ -210,10 +210,10 @@ nav {
     background-image: url(../images/photos/edited/3.png); }
   .episode:nth-child(4) .episode__image {
     background-image: url(../images/photos/edited/4.png); }
-  .episode:nth-child(4) .episode__image {
+  .episode:nth-child(5) .episode__image {
     background-image: url(../images/photos/edited/healinghappens.png); }
-  .episode:nth-child(4) .episode__image {
-    background-image: url(../images/photos/edited/andycappthedj.png); }
+  .episode:nth-child(6) .episode__image {
+    background-image: url(../images/photos/edited/andycappthedj.jpg); }
   .episode:hover .episode__detail:before {
     width: 100%; }
   .episode:hover:nth-child(1) .episode__image {
@@ -224,6 +224,10 @@ nav {
     background-image: url(../images/photos/original/3.png); }
   .episode:hover:nth-child(4) .episode__image {
     background-image: url(../images/photos/original/4.png); }
+  .episode:hover:nth-child(5) .episode__image {
+    background-image: url(../images/photos/original/healinghappens.png); }
+  .episode:hover:nth-child(6) .episode__image {
+    background-image: url(../images/photos/original/andycappthedj.jpg); }
 
 .episode__number {
   display: none;
