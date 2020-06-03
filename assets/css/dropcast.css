@@ -211,9 +211,9 @@ nav {
   .episode:nth-child(4) .episode__image {
     background-image: url(../images/photos/original/anders.jpg); }
   .episode:nth-child(5) .episode__image {
-    background-image: url(../images/photos/edited/healinghappens.png); }
+    background-image: url(../images/photos/original/healinghappens.png); }
   .episode:nth-child(6) .episode__image {
-    background-image: url(../images/photos/edited/andycappthedj.jpg); }
+    background-image: url(../images/photos/original/andycappthedj.jpg); }
   .episode:hover .episode__detail:before {
     width: 100%; }
   .episode:hover:nth-child(1) .episode__image {
