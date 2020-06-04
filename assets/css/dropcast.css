@@ -209,6 +209,9 @@ nav {
 .episode {
   position: relative;
   display: flex; }
+.episode2 {
+  position: relative;
+  display: flex; }
   .episode:nth-child(1) .episode__image {
     background-image: url(../images/photos/original/wokenomad.png);
     background-positiion:center bottom; }
@@ -241,6 +244,8 @@ nav {
     background-image: url(../images/photos/original/andycappthedj.jpg); }
   .episode2:hover:nth-child(1) .episode__image {
     background-image: url(../images/photos/original/anders.jpg); }
+  .episode2:hover .episode__detail:before {
+    width: 100%; }
 
 .episode__number {
   display: none;
