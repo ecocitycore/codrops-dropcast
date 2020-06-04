@@ -54,8 +54,12 @@
       handle: ".portlet-header",
       cancel: ".portlet-toggle",
       placeholder: "portlet-placeholder ui-corner-all"
+    stop: function(event, ui) {
+        alert("New position: " + ui.item.index());
+    }
     });
- 
+	  
+	  
     $( ".portlet" )
       .addClass( "ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" )
       .find( ".portlet-header" )
