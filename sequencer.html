@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>jQuery UI Sortable - Portlets</title>
+  <title>Umaticast - show sequence manager week view</title>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <style>
   table {
@@ -62,6 +62,7 @@
     },
     stop: function(event, ui) {    
         console.log("Item ID: " +  ui.item.attr("id"));
+	console.log("Item COL: " +  ui.item.parent.attr("id"));
         console.log("Start position: " + ui.item.startPos);
         console.log("New position: " + ui.item.index());
     }
@@ -83,7 +84,7 @@
 </head>
 <body>
  
-<div class="column">
+<div class="column" id="1">
  <h2>Monday</h2>
   <div class="portlet" id="1">
     <div class="portlet-header">Feeds</div>
@@ -97,7 +98,7 @@
  
 </div>
  
-<div class="column">
+<div class="column" id="2">
  <h2>Tuesday</h2>
  
   <div class="portlet" id="3">
@@ -107,7 +108,7 @@
  
 </div>
  
-<div class="column">
+<div class="column" id="3">
  <h2>Wednesday</h2>
  
   <div class="portlet" id="4">
@@ -123,7 +124,7 @@
 </div>
  
  
-<div class="column">
+<div class="column" id="4">
  <h2>Thursday</h2>
  
   <div class="portlet" id="6">
@@ -133,7 +134,7 @@
  
 </div>
  
-<div class="column">
+<div class="column" id="5">
  <h2>Friday</h2>
  
   <div class="portlet" id="7">
@@ -144,7 +145,7 @@
 </div>
 
  
-<div class="column">
+<div class="column" id="6">
  <h2>Saturday</h2>
  
   <div class="portlet" id="8">
@@ -155,7 +156,7 @@
 </div>
 
  
-<div class="column">
+<div class="column" id="7">
  <h2>Sunday</h2>
  
   <div class="portlet" id="9">
