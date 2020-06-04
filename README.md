@@ -1,10 +1,10 @@
-# Umaticast - a responsive HTML template for podcasts or blogs being expanded to include self help groups features.
+# Umaticast - self help groups feature.
+
+ via responsive HTML template for podcasts or blog template genius designer Amie Chen
 
 Demo of prototype app : https://umaticast.netlify.com
 
 Demo of api : https://portal.etiny.xyz
-
-Template original site template by genius designer Amie Chen
 
 Umaticast is a responsive HTML/CSS/Javascript template, comes with Sketch files (for both mobile and desktop versions) and a fully working site. It works very well for podcast landing pages or blogs, and can be easily customized.
 
