@@ -62,9 +62,10 @@
     },
     stop: function(event, ui) {
         console.log("Item ID: " +   ui.item.attr("id"));
-	console.log("Item COL: " +  ui.item.closest('span').attr("id"));
-        console.log("Start position: " + ui.item.startPos);
-        console.log("New position: " + ui.item.index());
+        console.log("Start col: " + ui.item.closest('span').startPos);
+	console.log("New col: " +  ui.item.closest('span').attr("id"));
+        console.log("Start row: " + ui.item.startPos);
+        console.log("New row: " + ui.item.index());
     }
 });  
 	  
