@@ -60,9 +60,9 @@
     start: function(event, ui) {
         ui.item.startPos = ui.item.index();
     },
-    stop: function(event, ui) {    
-        console.log("Item ID: " +  ui.item.attr("id"));
-	console.log("Item COL: " +  ui.item.parent.attr("id"));
+    stop: function(event, ui) {
+        console.log("Item ID: " +   ui.item.attr("id"));
+	console.log("Item COL: " +  ui.item.closest.attr("id"));
         console.log("Start position: " + ui.item.startPos);
         console.log("New position: " + ui.item.index());
     }
