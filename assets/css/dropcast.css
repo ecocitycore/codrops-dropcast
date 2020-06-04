@@ -217,9 +217,9 @@ nav {
     background-positiion:center bottom; }
   .episode:nth-child(3) .episode__image {
     background-image: url(../images/photos/original/futurefossils.jpg); }
-  .episode:nth-child(4) .episode__image {
-    background-image: url(../images/photos/original/anders.jpg); }
   .episode:nth-child(5) .episode__image {
+    background-image: url(../images/photos/original/anders.jpg); }
+  .episode:nth-child(4) .episode__image {
     background-image: url(../images/photos/original/healinghappens.png); }
   .episode:nth-child(6) .episode__image {
     background-image: url(../images/photos/original/andycappthedj.jpg); }
@@ -233,9 +233,9 @@ nav {
     background-positiion:center bottom; }
   .episode:hover:nth-child(3) .episode__image {
     background-image: url(../images/photos/original/futurefossils.jpg); }
-  .episode:hover:nth-child(4) .episode__image {
-    background-image: url(../images/photos/original/anders.jpg); }
   .episode:hover:nth-child(5) .episode__image {
+    background-image: url(../images/photos/original/anders.jpg); }
+  .episode:hover:nth-child(4) .episode__image {
     background-image: url(../images/photos/original/healinghappens.png); }
   .episode:hover:nth-child(6) .episode__image {
     background-image: url(../images/photos/original/andycappthedj.jpg); }
