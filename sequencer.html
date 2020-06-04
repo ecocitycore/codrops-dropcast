@@ -62,7 +62,7 @@
     },
     stop: function(event, ui) {
         console.log("Item ID: " +   ui.item.attr("id"));
-	console.log("Item COL: " +  ui.item.closest('div').attr("id"));
+	console.log("Item COL: " +  ui.item.closest('div').class("column").attr("id"));
         console.log("Start position: " + ui.item.startPos);
         console.log("New position: " + ui.item.index());
     }
