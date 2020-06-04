@@ -62,7 +62,7 @@
     },
     stop: function(event, ui) {
         console.log("Item ID: " +   ui.item.attr("id"));
-	console.log("Item COL: " +  ui.item.closest('div').class("column").attr("id"));
+	console.log("Item COL: " +  ui.item.closest('span').attr("id"));
         console.log("Start position: " + ui.item.startPos);
         console.log("New position: " + ui.item.index());
     }
@@ -84,7 +84,7 @@
 </head>
 <body>
  
-<div class="column" id="1">
+<span class="column" id="1">
  <h2>Monday</h2>
   <div class="portlet" id="1">
     <div class="portlet-header">Feeds</div>
@@ -96,9 +96,9 @@
     <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
   </div>
  
-</div>
+</span>
  
-<div class="column" id="2">
+<span class="column" id="2">
  <h2>Tuesday</h2>
  
   <div class="portlet" id="3">
@@ -106,9 +106,9 @@
     <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
   </div>
  
-</div>
+</span>
  
-<div class="column" id="3">
+<span class="column" id="3">
  <h2>Wednesday</h2>
  
   <div class="portlet" id="4">
@@ -121,10 +121,10 @@
     <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
   </div>
  
-</div>
+</span>
  
  
-<div class="column" id="4">
+<span class="column" id="4">
  <h2>Thursday</h2>
  
   <div class="portlet" id="6">
@@ -132,9 +132,9 @@
     <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
   </div>
  
-</div>
+</span>
  
-<div class="column" id="5">
+<span class="column" id="5">
  <h2>Friday</h2>
  
   <div class="portlet" id="7">
@@ -142,10 +142,10 @@
     <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
   </div>
  
-</div>
+</span>
 
  
-<div class="column" id="6">
+<span class="column" id="6">
  <h2>Saturday</h2>
  
   <div class="portlet" id="8">
@@ -153,10 +153,10 @@
     <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
   </div>
  
-</div>
+</span>
 
  
-<div class="column" id="7">
+<span class="column" id="7">
  <h2>Sunday</h2>
  
   <div class="portlet" id="9">
@@ -164,7 +164,7 @@
     <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
   </div>
  
-</div>
+</span>
 
 
  
