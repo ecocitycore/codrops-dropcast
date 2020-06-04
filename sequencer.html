@@ -60,7 +60,9 @@
     start: function(event, ui) {
         ui.item.startPos = ui.item.index();
     },
-    stop: function(event, ui) {
+    update: function(event, ui) {
+	    
+        console.log("Item ID: " + ui.item.id);
         console.log("Start position: " + ui.item.startPos);
         console.log("New position: " + ui.item.index());
     }
@@ -84,12 +86,12 @@
  
 <div class="column">
  <h2>Monday</h2>
-  <div class="portlet">
+  <div class="portlet" id=1>
     <div class="portlet-header">Feeds</div>
     <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
   </div>
  
-  <div class="portlet">
+  <div class="portlet" id=2>
     <div class="portlet-header">News</div>
     <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
   </div>
@@ -99,7 +101,7 @@
 <div class="column">
  <h2>Tuesday</h2>
  
-  <div class="portlet">
+  <div class="portlet" id=3>
     <div class="portlet-header">Shopping</div>
     <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
   </div>
@@ -109,12 +111,12 @@
 <div class="column">
  <h2>Wednesday</h2>
  
-  <div class="portlet">
+  <div class="portlet" id=4>
     <div class="portlet-header">Links</div>
     <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
   </div>
  
-  <div class="portlet">
+  <div class="portlet" id=5>
     <div class="portlet-header">Images</div>
     <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
   </div>
@@ -125,7 +127,7 @@
 <div class="column">
  <h2>Thursday</h2>
  
-  <div class="portlet">
+  <div class="portlet" id=5>
     <div class="portlet-header">Shopping</div>
     <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
   </div>
@@ -135,7 +137,7 @@
 <div class="column">
  <h2>Friday</h2>
  
-  <div class="portlet">
+  <div class="portlet" id=6>
     <div class="portlet-header">Shopping</div>
     <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
   </div>
@@ -146,7 +148,7 @@
 <div class="column">
  <h2>Saturday</h2>
  
-  <div class="portlet">
+  <div class="portlet" id=7>
     <div class="portlet-header">Shopping</div>
     <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
   </div>
@@ -157,7 +159,7 @@
 <div class="column">
  <h2>Sunday</h2>
  
-  <div class="portlet">
+  <div class="portlet" id=8>
     <div class="portlet-header">Shopping</div>
     <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
   </div>
