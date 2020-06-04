@@ -54,11 +54,17 @@
       handle: ".portlet-header",
       cancel: ".portlet-toggle",
       placeholder: "portlet-placeholder ui-corner-all"
-    stop: function(event, ui) {
-        alert("New position: " + ui.item.index());
-    }
     });
 	  
+    $( ".column" ).sortable({
+    start: function(event, ui) {
+        ui.item.startPos = ui.item.index();
+    },
+    stop: function(event, ui) {
+        console.log("Start position: " + ui.item.startPos);
+        console.log("New position: " + ui.item.index());
+    }
+});  
 	  
     $( ".portlet" )
       .addClass( "ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" )
