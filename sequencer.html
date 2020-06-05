@@ -51,15 +51,12 @@
   $( function() {
 
   var umaticastAPI = "https://portl.etiny.xyz//api/umaticast";
-  $.getJSON( umatiAPI, {
+  $.getJSON( umaticastAPI, {
     format: "json"
   })
     .done(function( data ) {
       $.each( data.items, function( i, item ) {
-        $( "<img>" ).attr( "src", item.media.m ).appendTo( "#col1" );
-        if ( i === 3 ) {
-          return false;
-        }
+	     $( this.colid ).append( "<div class=\"portlet\" id=\"" + this.itemid +  "\"><div class=\"portlet-header\">" + this.title + "</div><div class=\"portlet-content\">" + this.embedcode + "</div></div>");	  	    	      
       });
     });
 
