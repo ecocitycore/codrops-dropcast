@@ -69,12 +69,12 @@
 //  });	  
 	  	  
 	  
-    $.getJSON( umaticastAPI, {
+    $.getJSONP( umaticastAPI, {
     format: "jsonp",
     method: "GET",
     headers: {
-            accept: "application/json",
-            Access-Control-Allow-Origin: "https://portal.etiny.xyz"
+            accept: "application/json"
+        //    Access-Control-Allow-Origin: "https://portal.etiny.xyz";
           }	  
   })
 
