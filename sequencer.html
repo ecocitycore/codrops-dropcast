@@ -50,6 +50,25 @@
   <script>
   $( function() {
    
+    var data = {
+    "GetDataResult": [{
+        "firstname": "firstname1",
+        "lastname": "lastname1"
+    }, {
+        "firstname": "firstname2",
+        "lastname": "lastname2"
+    }]
+    };
+
+    for (i = 0; i < data.GetDataResult.length; i++) {
+      console.log(data.GetDataResult[i].firstname);
+      console.log(data.GetDataResult[i].lastname);
+    };
+
+    $.each(data.GetDataResult, function(i, item) {
+      console.log(this.firstname);
+      console.log(this.lastname);
+    });	  
 	  
     $( ".col1" ).append( "<div class=\"portlet\" id=\"11\"><div class=\"portlet-header\">Feedso</div><div class=\"portlet-content\">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div></div>");	  
 		  
