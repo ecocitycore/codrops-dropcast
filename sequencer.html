@@ -49,7 +49,22 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
   $( function() {
-   
+
+  var umaticastAPI = "https://portl.etiny.xyz//api/umaticast";
+  $.getJSON( umatiAPI, {
+    format: "json"
+  })
+    .done(function( data ) {
+      $.each( data.items, function( i, item ) {
+        $( "<img>" ).attr( "src", item.media.m ).appendTo( "#col1" );
+        if ( i === 3 ) {
+          return false;
+        }
+      });
+    });
+
+	  
+	  
     var data = {
     "GetDataResult": [{
         "firstname": "firstname1",
