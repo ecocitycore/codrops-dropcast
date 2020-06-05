@@ -49,6 +49,14 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
   $( function() {
+   
+	  
+    $( ".col1" ).closest('span').append( '<div class="portlet" id="11">
+    <div class="portlet-header">Feedso</div>
+    <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+    </div>' );	  
+	  
+	  
     $( ".column" ).sortable({
       connectWith: ".column",
       handle: ".portlet-header",
@@ -86,10 +94,7 @@
     });
   } );
 	 
-    $( "#0" ).closest('span').append( '<div class="portlet" id="11">
-    <div class="portlet-header">Feedso</div>
-    <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
-    </div>' );
+
 	  
   </script>
 </head>
@@ -98,7 +103,7 @@
 	
 
 <div class="content" style="width:96%">	
-<span class="column" id="0">
+<span class="column col1" id="0">
  <h2>Monday</h2>
   <div class="portlet" id="1">
     <div class="portlet-header">Feeds</div>
