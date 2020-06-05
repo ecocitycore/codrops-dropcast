@@ -69,11 +69,10 @@
 //            Access-Control-Allow-Origin: "https://portal.etiny.xyz"
 //          }	  
 //  })
-    function( xhr ) {
+
       $.each( xhr.items, function( i, item ) {
 	     $( this.colid ).append( "<div class=\"portlet\" id=\"" + this.itemid +  "\"><div class=\"portlet-header\">" + this.title + "</div><div class=\"portlet-content\">" + this.embedcode + "</div></div>");	  	    	      
       });
-    };
   
 	  
     var data = {
