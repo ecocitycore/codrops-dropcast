@@ -53,15 +53,15 @@
 
   var umaticastAPI = "https://portl.etiny.xyz//api/umaticast";
 
-  var xhr = new XMLHttpRequest() {
-        xhr.open('GET', umaticastAPI, true)
-        xhr.withCredentials = true
+  var xhr = new XMLHttpRequest() 
+        xhr.open('GET', umaticastAPI, true);
+        xhr.withCredentials = true;
         xhr.onreadystatechange = function() {
           if (xhr.readyState === 2) {// do something}
         }
-        xhr.setRequestHeader('Content-Type', 'application/json')
+        xhr.setRequestHeader('Content-Type', 'application/json');
         var data = xhr.get(json)	  
-	}	  
+		  
 //    $.getJSON( umaticastAPI, {
 //    format: "json",
 //    method: "GET",
