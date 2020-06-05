@@ -58,14 +58,14 @@
 	  
     $( ".column" ).sortable({
     start: function(event, ui) {
-        ui.item.startPos = ui.item.index();
+        ui.item.startRow = ui.item.index();
 	ui.item.startCol = ui.item.closest('span').index();
     },
     stop: function(event, ui) {
         console.log("Item ID: " +   ui.item.attr("id"));
         console.log("Start col: " + ui.item.startCol);
 	console.log("New col: " +  ui.item.closest('span').attr("id"));
-        console.log("Start row: " + ui.item.startPos);
+        console.log("Start row: " + ui.item.startRow);
         console.log("New row: " + ui.item.index());
     }
 });  
