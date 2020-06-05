@@ -59,7 +59,7 @@
     $( ".column" ).sortable({
     start: function(event, ui) {
         ui.item.startRow = ui.item.index();
-	ui.item.startCol = ui.item.closest('span').index();
+	ui.item.startCol = ui.item.closest('span').index(+1);
     },
     stop: function(event, ui) {
         console.log("Item ID: " +   ui.item.attr("id"));
