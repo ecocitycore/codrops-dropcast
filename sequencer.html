@@ -51,7 +51,6 @@
   $( function() {
 	  	 	
   //const invocation = new XMLHttpRequest();
-  const umaticastAPI = "https://portal.etiny.xyz/api/umaticast";
     
 //function callOtherDomain() {
 //  if (invocation) {
@@ -67,9 +66,41 @@
 //    dataType: 'jsonp',
 //    forceMethod: true
 //  });	  
-	  	  
+	
+function makeTheCall() {
+  const umaticastAPI = "https://portal.etiny.xyz/api/umaticast";
+//	var destinationUrl = "www.otherdestinationserver.com";
+    $.ajax({
+      type: 'GET',
+      url: umaticastAPI,
+      dataType: 'json', // use json only, not jsonp
+      crossDomain: true, // tell browser to allow cross domain.
+      success: successResopnse,
+      error: failureFunction
+    });
+  }
+  
+  successResponse = function(data) {
+  //functionality goes here;
+      $.each(data.GetDataResult, function(i, item) {
+
+      $( this.colid ).append( "<div class=\"portlet\" id=\"" + this.itemid +  "\"><div class=\"portlet-header\">" + this.title + "</div><div class=\"portlet-content\">" + this.embedcode + "</div></div>");	  	    
+      console.log(this.firstname);
+      console.log(this.lastname);
+    });		  
 	  
-    $.getJSON( umaticastAPI, {
+	  
+  }
+
+  failureFunction = function(data) {
+  //functionality goes here;
+  }	  
+
+  makeTheCall();
+	  
+	  
+	  
+/*    $.getJSON( umaticastAPI, {
     format: "jsonp",
     method: "GET",
     headers: {
@@ -81,9 +112,9 @@
       .each( xhr.items, function( i, item ) {
 	     $( this.colid ).append( "<div class=\"portlet\" id=\"" + this.itemid +  "\"><div class=\"portlet-header\">" + this.title + "</div><div class=\"portlet-content\">" + this.embedcode + "</div></div>");	  	    	      
       });
-  
+  */
 	  
-    var data = {
+    var data2 = {
     "GetDataResult": [{
         "firstname": "firstname1",
         "lastname": "lastname1",
@@ -113,7 +144,7 @@
     //  console.log(data.GetDataResult[i].lastname);
     // };
 
-    $.each(data.GetDataResult, function(i, item) {
+    $.each(data2.GetDataResult, function(i, item) {
 
       $( this.colid ).append( "<div class=\"portlet\" id=\"" + this.itemid +  "\"><div class=\"portlet-header\">" + this.title + "</div><div class=\"portlet-content\">" + this.embedcode + "</div></div>");	  	    
       console.log(this.firstname);
