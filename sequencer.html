@@ -78,7 +78,8 @@ function makeTheCall() {
       success: successResponse,
       error: failureFunction
     });
-  }
+     const data = xhr.responseText;
+}
   
   successResponse = function(data) {
   //functionality goes here;
