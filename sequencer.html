@@ -50,9 +50,27 @@
   <script>
   $( function() {
 
+          'cache': false,
+          'dataType': "jsonp",
+          "async": true,
+          "crossDomain": true,
+          "url": "https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&origins=place_id:"+me.originPlaceId+"&destinations=place_id:"+me.destinationPlaceId+"&region=ng&units=metric&key=mykey",
+          "method": "GET",
+          "headers": {
+              "accept": "application/json",
+              "Access-Control-Allow-Origin":"*"
+          }	  
+	  
+	  
+	  
   var umaticastAPI = "https://portl.etiny.xyz//api/umaticast";
   $.getJSON( umaticastAPI, {
-    format: "json"
+    format: "json",
+    method: "GET",
+    headers: {
+            accept: "application/json",
+            Access-Control-Allow-Origin:"https://portl.etiny.xyz"
+          }	  
   })
     .done(function( data ) {
       $.each( data.items, function( i, item ) {
