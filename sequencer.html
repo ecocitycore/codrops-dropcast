@@ -53,7 +53,7 @@
 
   var umaticastAPI = "https://portl.etiny.xyz//api/umaticast";
 
-  var xhr = new XMLHttpRequest()
+  var xhr = new XMLHttpRequest() {
         xhr.open('GET', umaticastAPI, true)
         xhr.withCredentials = true
         xhr.onreadystatechange = function() {
@@ -61,7 +61,7 @@
         }
         xhr.setRequestHeader('Content-Type', 'application/json')
         var data = xhr.get(json)	  
-	  
+	}	  
 //    $.getJSON( umaticastAPI, {
 //    format: "json",
 //    method: "GET",
@@ -150,7 +150,7 @@
       icon.toggleClass( "ui-icon-minusthick ui-icon-plusthick" );
       icon.closest( ".portlet" ).find( ".portlet-content" ).toggle();
     });
-  };	 
+  });	 
 	  
   </script>
 </head>
