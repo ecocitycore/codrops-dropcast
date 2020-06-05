@@ -55,12 +55,14 @@
         "firstname": "firstname1",
         "lastname": "lastname1",
 	"itemid": "12",
+	"colid": "1",
 	"title":"title",
 	"embedcode":"embedcode"
     }, {
         "firstname": "firstname2",
         "lastname": "lastname2",
 	"itemid": "13",
+	"colid": "2",
 	"title":"title2",
 	"embedcode":"embedcode2"
 
@@ -74,7 +76,7 @@
 
     $.each(data.GetDataResult, function(i, item) {
 
-      $( this.itemid ).append( "<div class=\"portlet\" id=\"" + this.itemid +  "\"><div class=\"portlet-header\">" + this.title + "</div><div class=\"portlet-content\">" + this.embedcode + "</div></div>");	  	    
+      $( this.colid ).append( "<div class=\"portlet\" id=\"" + this.itemid +  "\"><div class=\"portlet-header\">" + this.title + "</div><div class=\"portlet-content\">" + this.embedcode + "</div></div>");	  	    
       console.log(this.firstname);
       console.log(this.lastname);
     });	  
