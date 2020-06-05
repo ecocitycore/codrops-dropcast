@@ -49,9 +49,8 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
   $( function() {
-	  	 	
-  //const invocation = new XMLHttpRequest();
-    
+	  	  	 	
+//const invocation = new XMLHttpRequest();    
 //function callOtherDomain() {
 //  if (invocation) {
 //    invocation.open('GET', umaticastAPI, true);
@@ -66,7 +65,20 @@
 //    dataType: 'jsonp',
 //    forceMethod: true
 //  });	  
-	
+
+   let xhr = new XMLHttpRequest();
+   xhr.open('GET', 'https://portal.etiny.xyz/api/umaticast');
+   xhr.responseType = 'json';
+   xhr.send();
+
+// the response is {"message": "Hello, world!"}
+xhr.onload = function() {
+  let responseObj = xhr.response;
+  alert(responseObj.message); // Hello, world!
+};
+	  
+	  
+	  
 function makeTheCall() {
   const umaticastAPI = "https://portal.etiny.xyz/api/umaticast";
 //	var destinationUrl = "www.otherdestinationserver.com";
@@ -97,7 +109,7 @@ function makeTheCall() {
   //functionality goes here;
   }	  
 
-  makeTheCall();
+//  makeTheCall();
 	  
 	  
 	  
