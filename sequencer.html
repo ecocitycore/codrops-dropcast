@@ -49,16 +49,27 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
   $( function() {
-	  	 	  
-   var umaticastAPI = "https://portl.etiny.xyz//api/umaticast";
-  $.getJSON( umaticastAPI, {
-    format: "json",
-    method: "GET",
-    headers: {
-            accept: "application/json",
-            Access-Control-Allow-Origin: "https://portal.etiny.xyz"
-          }	  
-  })
+	  	 	
+
+  var umaticastAPI = "https://portl.etiny.xyz//api/umaticast";
+
+  var xhr = new XMLHttpRequest()
+        xhr.open('GET', umaticastAPI, true)
+        xhr.withCredentials = true
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === 2) {// do something}
+        }
+        xhr.setRequestHeader('Content-Type', 'application/json')
+        var data = xhr.get(json)	  
+	  
+//    $.getJSON( umaticastAPI, {
+//    format: "json",
+//    method: "GET",
+//    headers: {
+//            accept: "application/json",
+//            Access-Control-Allow-Origin: "https://portal.etiny.xyz"
+//          }	  
+//  })
     .done(function( data ) {
       $.each( data.items, function( i, item ) {
 	     $( this.colid ).append( "<div class=\"portlet\" id=\"" + this.itemid +  "\"><div class=\"portlet-header\">" + this.title + "</div><div class=\"portlet-content\">" + this.embedcode + "</div></div>");	  	    	      
