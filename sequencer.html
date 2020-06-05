@@ -73,7 +73,7 @@ function makeTheCall() {
     $.ajax({
       type: 'GET',
       url: umaticastAPI,
-      dataType: 'jsonp', // use json only, not jsonp
+      dataType: 'json', // use json only, not jsonp
       crossDomain: true, // tell browser to allow cross domain.
       success: successResponse,
       error: failureFunction
