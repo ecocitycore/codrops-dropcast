@@ -50,7 +50,7 @@
   <script>
   $( function() {
 	  	 	
-  const invocation = new XMLHttpRequest();
+  //const invocation = new XMLHttpRequest();
   const umaticastAPI = "https://portal.etiny.xyz/api/umaticast";
     
 //function callOtherDomain() {
@@ -61,24 +61,24 @@
 //  }
 // }
 	  
-  var xhr = $.ajax({
-    type: 'HEAD',
-    url: umaticastAPI,
-    dataType: 'jsonp',
-    forceMethod: true
-  });	  
+//  var xhr = $.ajax({
+//    type: 'HEAD',
+//    url: umaticastAPI,
+//    dataType: 'jsonp',
+//    forceMethod: true
+//  });	  
 	  	  
 	  
-//    $.getJSON( umaticastAPI, {
-//    format: "json",
-//    method: "GET",
-//    headers: {
-//            accept: "application/json",
-//            Access-Control-Allow-Origin: "https://portal.etiny.xyz"
-//          }	  
-//  })
+    $.getJSON( umaticastAPI, {
+    format: "jsonp",
+    method: "GET",
+    headers: {
+            accept: "application/json",
+            Access-Control-Allow-Origin: "https://portal.etiny.xyz"
+          }	  
+  })
 
-      $.each( xhr.items, function( i, item ) {
+      .each( xhr.items, function( i, item ) {
 	     $( this.colid ).append( "<div class=\"portlet\" id=\"" + this.itemid +  "\"><div class=\"portlet-header\">" + this.title + "</div><div class=\"portlet-content\">" + this.embedcode + "</div></div>");	  	    	      
       });
   
