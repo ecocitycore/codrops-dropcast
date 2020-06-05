@@ -53,14 +53,13 @@
   const invocation = new XMLHttpRequest();
   const umaticastAPI = "https://portal.etiny.xyz/api/umaticast";
     
-function callOtherDomain() {
-  if (invocation) {
-    invocation.open('GET', umaticastAPI, true);
-    invocation.withCredentials = true;
-    invocation.onreadystatechange = handler;
-    invocation.send(); 
-  }
-}
+//function callOtherDomain() {
+//  if (invocation) {
+//    invocation.open('GET', umaticastAPI, true);
+//    invocation.withCredentials = true;
+//    invocation.send(); 
+//  }
+// }
 	  
   var xhr = $.ajax({
     type: 'HEAD',
