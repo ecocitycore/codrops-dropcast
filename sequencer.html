@@ -63,7 +63,7 @@
     },
     stop: function(event, ui) {
         console.log("Item ID: " +   ui.item.attr("id"));
-        console.log("Start col: " + ui.item.startCol + 1);
+        console.log("Start col: " + ui.item.startCol);
 	console.log("New col: " +  ui.item.closest('span').attr("id"));
         console.log("Start row: " + ui.item.startRow);
         console.log("New row: " + ui.item.index());
@@ -92,7 +92,7 @@
 	
 
 <div class="content" style="width:96%">	
-<span class="column" id="1">
+<span class="column" id="0">
  <h2>Monday</h2>
   <div class="portlet" id="1">
     <div class="portlet-header">Feeds</div>
@@ -106,7 +106,7 @@
  
 </span>
  
-<span class="column" id="2">
+<span class="column" id="1">
  <h2>Tuesday</h2>
  
   <div class="portlet" id="3">
@@ -116,7 +116,7 @@
  
 </span>
  
-<span class="column" id="3">
+<span class="column" id="2">
  <h2>Wednesday</h2>
  
   <div class="portlet" id="4">
@@ -132,7 +132,7 @@
 </span>
  
  
-<span class="column" id="4">
+<span class="column" id="3">
  <h2>Thursday</h2>
  
   <div class="portlet" id="6">
@@ -142,7 +142,7 @@
  
 </span>
  
-<span class="column" id="5">
+<span class="column" id="4">
  <h2>Friday</h2>
  
   <div class="portlet" id="7">
@@ -153,7 +153,7 @@
 </span>
 
  
-<span class="column" id="6">
+<span class="column" id="5">
  <h2>Saturday</h2>
  
   <div class="portlet" id="8">
@@ -164,7 +164,7 @@
 </span>
 
  
-<span class="column" id="7">
+<span class="column" id="6">
  <h2>Sunday</h2>
  
   <div class="portlet" id="9">
