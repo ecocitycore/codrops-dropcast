@@ -53,25 +53,32 @@
     var data = {
     "GetDataResult": [{
         "firstname": "firstname1",
-        "lastname": "lastname1"
+        "lastname": "lastname1",
+	"itemid": "12",
+	"title":"title",
+	"embedcode":"embedcode"
     }, {
         "firstname": "firstname2",
-        "lastname": "lastname2"
+        "lastname": "lastname2",
+	"itemid": "13",
+	"title":"title2",
+	"embedcode":"embedcode2"
+
     }]
     };
 
-    for (i = 0; i < data.GetDataResult.length; i++) {
-      console.log(data.GetDataResult[i].firstname);
-      console.log(data.GetDataResult[i].lastname);
-    };
+    //for (i = 0; i < data.GetDataResult.length; i++) {
+    //  console.log(data.GetDataResult[i].firstname);
+    //  console.log(data.GetDataResult[i].lastname);
+    // };
 
     $.each(data.GetDataResult, function(i, item) {
+
+      $( this.itemid ).append( "<div class=\"portlet\" id=\"" + this.itemid +  "\"><div class=\"portlet-header\">" + this.title + "</div><div class=\"portlet-content\">" + this.embedcode + "</div></div>");	  	    
       console.log(this.firstname);
       console.log(this.lastname);
     });	  
-	  
-    $( ".col1" ).append( "<div class=\"portlet\" id=\"11\"><div class=\"portlet-header\">Feedso</div><div class=\"portlet-content\">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div></div>");	  
-		  
+	 		  
     $( ".column" ).sortable({
       connectWith: ".column",
       handle: ".portlet-header",
